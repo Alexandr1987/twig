@@ -1,0 +1,16 @@
+{% extends 'about.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+       {% for i in 1..9 %}
+       <div class="col-md-4">
+           <img src="../img/2.jpg" alt="..." class="img-thumbnail" width="">
+           <p class="text-center">Tovar1</p>
+       </div>
+       {% endfor %}
+    </div>
+
+    <p></p>
+</div>
+{% endblock %}
