@@ -1,0 +1,11 @@
+{% macro list(items) %}
+
+<ul style="list-style-type: none;">
+    {% for item in items %}
+    <li style="float: left;margin-left:8px;">
+        <a href="">{{ item.name }},</a>
+    </li>
+
+{% endfor %}
+</ul>
+{% endmacro %}

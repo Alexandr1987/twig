@@ -1,3 +1,6 @@
-{% extends 'index.html' %}
+{% extends 'index.twig' %}
 
-
+{% block content %}
+{% import 'macro.twig' as lib %}
+    {{ lib.list(users)}}
+{% endblock %}

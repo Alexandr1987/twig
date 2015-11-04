@@ -1,0 +1,18 @@
+{% extends 'about.twig' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+
+    {% for i in 1..3 %}
+            <div class="col-md-4">
+        {% include 'tovar.twig' %}
+                {% import 'macroses.twig' as lib %}
+                {{ lib.list(tegs)}}
+            </div>
+    {% endfor %}
+
+    </div>
+
+</div>
+{% endblock %}

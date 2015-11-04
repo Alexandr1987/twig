@@ -1,0 +1,6 @@
+{% macro list(items) %}
+
+    <ul>{% for item in items %}</ul>
+        <li>{{ item.name }}</li>
+    {% endfor %}
+{% endmacro %}
