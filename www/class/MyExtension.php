@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Àëåêñàíäð
+ * User: ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€
  * Date: 07.11.2015
  * Time: 13:19
  */
@@ -54,7 +54,15 @@ class MyExtension
             new Twig_SimpleFunction('cub',function ($x){
                 return $x*$x*$x;
             }),
+            new Twig_SimpleFunction('find',function ($tegs,$teg){
+                foreach($tegs as $value){
+                    if ($teg == $value){
+                         $var[]=$value;
 
+                    }
+                    return $var;
+                };
+            }),
         ];
     }
 
