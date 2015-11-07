@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title></title>
+    <title>{{ config.title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -80,7 +80,9 @@
     {% block footer %}
     <div id="footer">
         <div class="container">
-            <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+            <p class="text-muted credit">Компания: {{ config.company }}</p>
+            <p class="text-muted credit">Телефон: <a href="http://martinbean.co.uk">{{ config.phone }}</a> Адресс: {{ config.adress }}.</p>
+
         </div>
     </div>
 
