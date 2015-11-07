@@ -15,7 +15,7 @@ class MyExtension
 
     public function getGlobals(){
         return [
-            'config' => include __DIR__.'/../../config.php'
+            'config' => include __DIR__ . '/../config.php'
         ];
     }
 
