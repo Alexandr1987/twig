@@ -1,3 +1,15 @@
+{% macro list1(items) %}
+
+    <ul>
+        {% for item in items %}
+            <li {% if item is yang %}style="color:red;"{% endif %}>
+                {{ item.name }}({{ item.age }}<sup>3</sup>={{ cub(item.age) }})
+            </li>
+
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
 {% macro list(items) %}
 
 <ul style="list-style-type: none;">
@@ -11,7 +23,7 @@
         <a href="#">{{ item.teg1 }}</a> <a href="#">{{ item.teg2 }}</a>
         <a href="#">{{ item.teg3 }}</a>
     </li>
-
+        {{ find(items,item.teg2) }}
 {% endfor %}
 
 </ul>
