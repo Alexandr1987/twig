@@ -2,10 +2,17 @@
 
 <ul style="list-style-type: none;">
     {% for item in items %}
-    <li style="float: left;margin-left:8px;">
-        <a href="">{{ item.name }},</a>
+    <li style="float: left;margin-left:8px;" >
+        <img src="../img/{{ item.img }}" alt="..." class="img-thumbnail" width="">
+        <p {% if item is recom %}style="color:red;background:#000;"{% endif %}>{{ item.name }}</p>
+        <p style="font-size: 18px;font-weight:800;">{{ item.price }}руб.</p>
+        <p style="font-size: 12px;font-weight:400;color:#ccc;">{{ item.price | indollar }}дол.</p>
+        <p style="font-size: 12px;font-weight:400;color:#ccc;">{{ item.price | inevro }}евро.</p>
+        <a href="#">{{ item.teg1 }}</a> <a href="#">{{ item.teg2 }}</a>
+        <a href="#">{{ item.teg3 }}</a>
     </li>
 
 {% endfor %}
+
 </ul>
 {% endmacro %}

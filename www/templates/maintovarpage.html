@@ -4,8 +4,7 @@
 <div class="col-md-4">
     {% include 'tovar.twig' %}
     {{ date | date(d.m.y) }}
-    {% import 'macroses.twig' as lib %}
-    {{ lib.list(tegs)}}
+    {{ tegs.name}}
 
 
 </div>
