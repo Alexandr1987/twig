@@ -1,11 +1,18 @@
 {% extends 'index.twig' %}
 
 {% block content %}
-<div class="col-md-4">
+<div class="col-md-4 text-center">
+
     {% include 'tovar.twig' %}
     {{ date | date(d.m.y) }}
-    {{ tegs.name}}
-
+    {% for item in tegs %}
+        <a href="#"><img src="../img/{{item.img }}" alt="..." class="img-thumbnail" width=""></a>
+    <p>{{ item.name }}</p>
+    <p>{{ item.price }}</p>
+    <a href="#">{{ item.teg1 }}</a>
+    <a href="#">{{ item.teg2 }}</a>
+    <a href="#">{{ item.teg3 }}</a>
+    {% endfor %}
 
 </div>
 
