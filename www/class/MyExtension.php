@@ -38,11 +38,11 @@ class MyExtension
                 return array_reverse($arr);
             }),
             new Twig_SimpleFilter('indollar',function($x){
-                return $x*60;
+                return $x/60;
 
             }),
             new Twig_SimpleFilter('inevro',function($x){
-                return $x*70;
+                return $x/70;
 
             }),
         ];
