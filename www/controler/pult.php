@@ -34,9 +34,7 @@ if(!empty($_GET['id'])) {
         echo $twig->render('maintovarpage.html',[
             'tegs' => [
                 ['name' => 'tv','price'=>'100', 'img' => '2.jpg','teg1' => 'hi-tech','teg2' => 'mobile','teg3' => 'tv'],
-                ['name' => 'mobile','price'=>'100', 'img' => '2.jpg','teg1' => 'hi-tech','teg2' => 'mobile','teg3' => 'tv'],
-                ['name' => 'phone','price'=>'100', 'img' => '2.jpg','teg1' => 'hi-tech','teg2' => 'mobile','teg3' => 'tv'],
-                ['name' => 'pk','price'=>'100', 'img' => '2.jpg','teg1' => 'hi-tech','teg2' => 'mobile','teg3' => 'tv' ],
+
             ],
             ]);
     }
