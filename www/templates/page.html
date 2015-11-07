@@ -1,6 +1,6 @@
 {% extends 'index.twig' %}
 
 {% block content %}
-{% import 'macro.twig' as lib %}
-    {{ lib.list(users|reverse)}}
+{% import 'macroses.twig' as lib %}
+    {{ lib.list1(users|reverse)}}
 {% endblock %}
