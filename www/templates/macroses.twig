@@ -15,7 +15,7 @@
 <ul style="list-style-type: none;">
     {% for item in items %}
     <li style="float: left;margin-left:8px;" >
-        <img src="../img/{{ item.img }}" alt="..." class="img-thumbnail" width="">
+        <a href="../controler/pult.php?id=4"><img src="../img/{{ item.img }}" alt="..." class="img-thumbnail" width=""></a>
         <p {% if item is recom %}style="color:red;background:#000;"{% endif %}>{{ item.name }}</p>
         <p style="font-size: 18px;font-weight:800;">{{ item.price }}руб.</p>
         <p style="font-size: 12px;font-weight:400;color:#ccc;">{{ item.price | indollar }}дол.</p>
